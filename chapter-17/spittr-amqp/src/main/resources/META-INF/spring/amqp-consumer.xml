@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns="http://www.springframework.org/schema/rabbit"
+             xsi:schemaLocation="http://www.springframework.org/schema/rabbit http://www.springframework.org/schema/rabbit/spring-rabbit-1.0.xsd
+              http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+    <!-- Import shared AMQP configuration -->
+    <beans:import resource="amqp-shared.xml"/>
+
+    <listener-container connection-factory="connectionFactory">
+        <listener ref="spittleListener"
+                  method="handleSpittleAlert"
+                  queues="spittleAlertQueue"/>
+    </listener-container>
+
+    <beans:bean id="spittleListener" class="spittr.alerts.SpittleAlertHandler"/>
+
+</beans:beans>

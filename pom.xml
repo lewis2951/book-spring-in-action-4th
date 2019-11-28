@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.lewis.book</groupId>
+    <artifactId>book-spring-in-action-4th</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>chapter-01</module>
+        <module>chapter-02</module>
+        <module>chapter-03</module>
+        <module>chapter-05</module>
+        <module>chapter-06</module>
+        <module>chapter-07</module>
+        <module>chapter-08</module>
+        <module>chapter-09</module>
+        <module>chapter-10</module>
+        <module>chapter-11</module>
+        <module>chapter-12</module>
+        <module>chapter-13</module>
+        <module>chapter-14</module>
+        <module>chapter-15</module>
+        <module>chapter-16</module>
+        <module>chapter-17</module>
+        <module>chapter-18</module>
+        <module>chapter-19</module>
+        <module>chapter-21</module>
+    </modules>
+
+</project>
